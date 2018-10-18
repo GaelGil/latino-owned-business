@@ -1,2 +1,2 @@
-# devmission-web-app
+# latino-business
 web app for devmission
