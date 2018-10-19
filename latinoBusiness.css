@@ -1,0 +1,31 @@
+/*
+//body
+.businesses
+.ame
+*/
+
+body{
+    background: lightgray;
+    margin: 10px;
+}
+
+h1 {
+    background-color: blue;
+}
+
+.businesses {
+    background-color: red;
+    margin-left: 0px;
+}
+
+.name {
+    background-color: green;
+}
+
+.type {
+    background-color: yellow;
+}
+
+.location {
+    background-color: brown;
+}
