@@ -4,28 +4,58 @@
 .ame
 */
 
+
+
 body{
     background: lightgray;
-    margin: 10px;
+    margin: 0px;
+    /*background: url(https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg);
+    background-size: 100%;*/
+}
+
+.container {
+    padding: 0px;
 }
 
 h1 {
-    background-color: blue;
+    /*background-color: blue;*/
 }
 
 .businesses {
-    background-color: red;
-    margin-left: 0px;
+    /*background-color: red;*/
+    /*background-color: lightgray;*/
+    width: 300px;
+    height: 150px;
+    margin: 50px;
+    padding-top: 50px;
+}
+
+.businesses :hover {
+    opacity: .3;
+}
+
+.list ul {
+    list-style: none;
+    display: inline-grid;
 }
 
 .name {
-    background-color: green;
+    font-size: 30px;
+    /*background-color: green;*/
+    width: 300px;
+    text-align: center;
 }
 
 .type {
-    background-color: yellow;
+    font-size: 15px;
+    /*background-color: yellow;*/
+    width: 300px;
+    text-align: center;
 }
 
 .location {
-    background-color: brown;
+    font-size: 15px;
+    /*background-color: brown;*/
+    width: 300px;
+    text-align: center;
 }
