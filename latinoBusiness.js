@@ -1,5 +1,5 @@
 var listView = function(type) {
- return '<button type="button" class="btn btn-light">${type}</button>'; 
+ return '<button type="button" class="btn btn-light">${type}</button>';   
 };
 
 $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ3080rrDaCwO6',
