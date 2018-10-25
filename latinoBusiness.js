@@ -17,6 +17,6 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
       //html.push(`<ul><li><div class="businesses"><h2><div class="name">${name},</div> <div class="type">${type},</div> 
       //<div class="location">${location}</div></h2></div></li></ul>`);
     });
-    $('.list').append(html);
+    $('body').append(html);
   }
 ); 
