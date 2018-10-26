@@ -1,3 +1,7 @@
+var listView = function(location) {
+ return '<button type="button" class="btn btn-light">${location}</button>';   
+};
+
 $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ3080rrDaCwO6',
   function(data){
     var html = [];
@@ -5,6 +9,8 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
       var name = record.fields['Name'];
       var location = record.fields['Location'];
       var type = record.fields['Type'];
+      //var img = record.fields['Images'];
+      //html.push(`<img src="${img}">`);
       //html.push(`<div class="name"> ${name}</div>`);
       //html.push(`<div class="type">${type}<div>`);
       //html.push(`<div class="location">${location}</div>`);
@@ -13,4 +19,5 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
     });
     $('.list').append(html);
   }
-);
+); 
+ 
