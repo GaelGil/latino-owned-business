@@ -13,9 +13,7 @@ body{
     background-size: 100%;*/
 }
 
-.container {
-    padding: 0px;
-}
+
 .mid {
     padding-left: 100px;
 }
@@ -23,14 +21,14 @@ body{
     background-color: blue;
 }*/
 
-.businesses {
+.businesses { 
     /*background-color: red;*/
     /*background-color: lightgray;*/
-    width: 300px;
-    height: 150px;
-    margin: 50px;
+    /*width: 400px;
+    height: 200px;*/
     padding-top: 50px;
 }
+
 
 .businesses :hover {
     opacity: .3;

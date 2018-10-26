@@ -9,8 +9,8 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
       var name = record.fields['Name'];
       var location = record.fields['Location'];
       var type = record.fields['Type'];
-      //var img = record.fields['Images'];
-      //html.push(`<img src="${img}">`);
+      var img = record.fields['Images'];
+      html.push(`<div class="businesses"><img style="width: 300px; height: 150px;"src="${img}"></div>`);
       //html.push(`<div class="name"> ${name}</div>`);
       //html.push(`<div class="type">${type}<div>`);
       //html.push(`<div class="location">${location}</div>`);
