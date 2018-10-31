@@ -54,6 +54,12 @@ body{
     width: 300px;
     float: left;
     color: black;
+    border-top: 1px solid gray;
+    border-left:1px solid gray;
+    border-right: 1px solid gray;
+    padding-top: 10px;
+    padding: 10px;
+    border-radius: 3px;
 }
 
 .type {
@@ -61,6 +67,9 @@ body{
     /*background-color: yellow;*/
     width: 300px;
     color: black;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 10px;
 }
 
 .location {
@@ -69,6 +78,14 @@ body{
     width: 300px;
     float: left;
     color: black;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+
 }
 
 h1 {
