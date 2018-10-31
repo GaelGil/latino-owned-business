@@ -1,13 +1,20 @@
 /*
 //body
+.mid
 .businesses
-.ame
+.list ul
+.name
+.type
+.location
+//h1
+//p
 */
 
 
 
 body{
-    background: lightgray;
+    /*background: rgba(139,69,19, .8);*/
+    background: lightgrey;
     margin: 0px;
     /*background: url(https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg);
     background-size: 100%;*/
@@ -15,7 +22,9 @@ body{
 
 
 .mid {
-    padding-left: 100px;
+    width: 100%;
+    margin-left: 25px;
+    /*padding-left: 100px;*/
 }
 /*h1 {
     background-color: blue;
@@ -26,7 +35,7 @@ body{
     /*background-color: lightgray;*/
     /*width: 400px;
     height: 200px;*/
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 
@@ -43,19 +52,29 @@ body{
     font-size: 30px;
     /*background-color: green;*/
     width: 300px;
-    text-align: center;
+    float: left;
+    color: black;
 }
 
 .type {
     font-size: 15px;
     /*background-color: yellow;*/
     width: 300px;
-    text-align: center;
+    color: black;
 }
 
 .location {
     font-size: 15px;
     /*background-color: brown;*/
     width: 300px;
-    text-align: center;
+    float: left;
+    color: black;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: black;
 }
