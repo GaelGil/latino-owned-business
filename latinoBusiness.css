@@ -10,6 +10,7 @@
 //p
 */
 
+
 body{
     background: lightgrey;
     margin: 0px;
@@ -70,3 +71,7 @@ body{
 p {
     color: black;
 }*/
+
+.list img {
+    max-width: 300px;
+}
