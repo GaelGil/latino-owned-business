@@ -13,37 +13,26 @@
 
 
 body{
-    /*background: rgba(139,69,19, .8);*/
     background: lightgrey;
     margin: 0px;
-    /*background: url(https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg);
-    background-size: 100%;*/
 }
-
 
 .mid {
-    width: 100%;
-    margin-left: 25px;
-    /*padding-left: 100px;*/
+    margin-left: 80px;
 }
-/*h1 {
-    background-color: blue;
-}*/
 
 .businesses { 
-    /*background-color: red;*/
-    /*background-color: lightgray;*/
-    /*width: 400px;
-    height: 200px;*/
     height: 300px;
     border: 1px solid gray;
-    border-radius: 5px;
-    margin-left: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: grey;
+    margin-top: 50px;
 }
 
 
 .businesses :hover {
-    opacity: .3;
+    opacity: .5;
 }
 
 .list ul {
@@ -53,48 +42,33 @@ body{
 
 .name {
     font-size: 30px;
-    /*background-color: green;*/
     width: 300px;
     float: left;
     color: black;
-    /*border-top: 1px solid gray;
-    border-left:1px solid gray;
-    border-right: 1px solid gray;*/
-    padding-top: 10px;
-    padding: 10px;
-    border-radius: 3px;
+     padding: 5px;
 }
 
 .type {
     font-size: 15px;
-    /*background-color: yellow;*/
     width: 300px;
     color: black;
-   /* border-left: 1px solid gray;
-    border-right: 1px solid gray;*/
-    padding: 10px;
+    padding: 5px;
 }
 
 .location {
     font-size: 15px;
-    /*background-color: brown;*/
     width: 300px;
     float: left;
     color: black;
-   /* border-bottom: 1px solid gray;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;*/
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 3px;
-
+    /*padding-bottom: 10px;
+    margin-bottom: 10px;*/
+    padding: 5px;
 }
 
-h1 {
+/*h1 {
     color: black;
 }
 
 p {
     color: black;
-}
+}*/
