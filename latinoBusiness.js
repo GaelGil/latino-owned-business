@@ -19,10 +19,14 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
 
 var listView = function(name, type, location, img) {
   return `
-    <img src="${img}"; alt="photo">
-    <h2>${name}</h2>
-    <p>${type}</p>
-    <p>${location}</p>
+  <div class="card" style="width: 18rem; display: inline-flex;">
+  <img class="card-img-top" src="${img}" alt="Card image cap">
+  <div class="card-body">
+     <h5 class="card-title">${name}</h5>
+      <p class="card-text">${type} <br> ${location}.</p>
+      <a href="#" class="btn btn-primary">Explore</a>
+  </div>
+</div>
     `;
 }
 

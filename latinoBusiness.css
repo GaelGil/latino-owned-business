@@ -1,11 +1,7 @@
 /*
 //body
 .mid
-.businesses
-.list ul
-.name
-.type
-.location
+.card
 //h1
 //p
 */
@@ -17,51 +13,7 @@ body{
 }
 
 .mid {
-    margin-left: 80px;
-}
-
-.businesses { 
-    height: 300px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: grey;
-    margin-top: 50px;
-}
-
-
-.businesses :hover {
-    opacity: .5;
-}
-
-.list ul {
-    list-style: none;
-    display: inline-grid;
-}
-
-.name {
-    font-size: 30px;
-    width: 300px;
-    float: left;
-    color: black;
-     padding: 5px;
-}
-
-.type {
-    font-size: 15px;
-    width: 300px;
-    color: black;
-    padding: 5px;
-}
-
-.location {
-    font-size: 15px;
-    width: 300px;
-    float: left;
-    color: black;
-    /*padding-bottom: 10px;
-    margin-bottom: 10px;*/
-    padding: 5px;
+    margin-left: 100px;
 }
 
 /*h1 {
@@ -74,4 +26,9 @@ p {
 
 .list img {
     max-width: 300px;
+    height: 250px;
+}
+
+.card {
+    margin: 30px;
 }
