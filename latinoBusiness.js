@@ -10,7 +10,7 @@ function getParameterByName(name, url) {
 }
 
 /*all the functions */
-var getAllrecords = function () {
+var getAllrecords = function() {
 $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ3080rrDaCwO6',
   function(data){
     var html = [];
@@ -29,17 +29,17 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
 );
 }
 
-var getOneRecord = function (id) {
-  $.getJSON(`https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201/${id}?/recQkidGkaeD8woXX`,
+var getOneRecord = function(id) {
+  $.getJSON(`https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201/${id}?api_key=keyjQ3080rrDaCwO6`, 
   function(record) {
     var html = [];
-    var name = record.fields[`Name`];
-    var location = record.fields [`Location`];
-    var type = record.fields[`Type`];
-    var img = record.fields[`Images`];
-    var photos = record.fields[`Photos`];
+    var name = record.fields['Name'];
+    var location = record.fields ['Location'];
+    var type = record.fields['Type'];
+    var img = record.fields['Images'];
+    var photos = record.fields['Photos'];
     html.push(detailView(name,type,location,img));
-    $(`body`).append(html);
+    $('body').append(html);
   }
   );
 }
@@ -52,7 +52,7 @@ var listView = function(id, name, type, location, img) {
   <div class="card-body">
      <h5 class="card-title">${name}</h5>
       <p class="card-text">${type} <br> ${location}.</p>
-      <a href="index.html?id${id}" class="btn btn-primary">Explore</a>
+      <a href="index.html?id=${id}" class="btn btn-primary">Explore</a>
   </div>
 </div>
     `;
@@ -60,10 +60,18 @@ var listView = function(id, name, type, location, img) {
 
 var detailView = function (name, type, location, img) {
     return `
-      <h1>${name}<h1>
-      <h1>${type}<h1>
-      <h1>${location}<h1>
-      <img class="card-img-top" src="${img}" alt="Card image cap">
+    <div class"jumbotron">
+      <div class="container">
+        <img class="card-img-top" style="width: 300px; height: 300px;" src="${img}" alt="Card image cap">
+       <h1>${name}<h1>
+       <br>
+        <p> ${type} <br>${location}</p>
+        <p class="lead">
+              <a href="index.html" class="btn btn-lg btn-secondary">Go Back</a>
+              <br><br>
+            </p>
+      </div>
+    </div>  
     `;
 }
 
@@ -74,10 +82,6 @@ if (id) {
 } else {
   getAllrecords();
 }
-
-
-
-console.log(id);
 
 
 
