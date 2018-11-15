@@ -60,18 +60,20 @@ var listView = function(id, name, type, location, img) {
 
 var detailView = function (name, type, location, img) {
     return `
-    <div class"jumbotron">
-      <div class="container">
-        <img class="card-img-top" style="width: 300px; height: 300px;" src="${img}" alt="Card image cap">
-       <h1>${name}<h1>
-       <br>
-        <p> ${type} <br>${location}</p>
-        <p class="lead">
-              <a href="index.html" class="btn btn-lg btn-secondary">Go Back</a>
+  
+    <div class="container">
+        <img class="card-img-top rounded mx-auto d-block" style="width: 300px; height: 300px;" src="${img}" alt="Card image cap">
+        <br>      
+        <h1 class="text-center">${name}<h1>
+        <p class="text-center"> ${type} <br>${location}</p>
+        <p class="lead text-center">
+          <br>
+          <br>
+              <a href="index.html" class="btn btn-lg btn-secondary float-left">Go Back</a>
+              <a href="${location}"></a>
               <br><br>
             </p>
-      </div>
-    </div>  
+    </div>
     `;
 }
 
