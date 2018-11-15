@@ -4,6 +4,7 @@
 .card
 //h1
 //p
+.navbar
 */
 
 
@@ -30,5 +31,13 @@ p {
 }
 
 .card {
-    margin: 30px;
+   margin: 30px;
+}
+
+.navbar {
+    background-color: lightgray;
+}
+
+.jumbotron {    
+    background: lightgray;
 }
