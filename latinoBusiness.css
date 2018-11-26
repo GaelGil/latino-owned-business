@@ -5,12 +5,14 @@
 //h1
 //p
 .navbar
+
 */
 
 
 body{
     background: lightgrey;
     margin: 0px;
+    
 }
 
 .mid {
@@ -26,7 +28,7 @@ p {
 }*/
 
 .list img {
-    max-width: 300px;
+    
     height: 250px;
 }
 
@@ -40,4 +42,8 @@ p {
 
 .jumbotron {    
     background: lightgray;
+}
+
+.jumbotron-fluid ul {
+    list-style: none;
 }

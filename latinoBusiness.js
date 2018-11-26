@@ -35,10 +35,12 @@ var getOneRecord = function(id) {
     var html = [];
     var name = record.fields['Name'];
     var location = record.fields ['Location'];
+    var website = record.fields ['Website'];
+    var ig = record.fields ['Ig'];
     var type = record.fields['Type'];
     var img = record.fields['Images'];
     var photos = record.fields['Photos'];
-    html.push(detailView(name,type,location,img));
+    html.push(detailView(name,type,location,img,website,ig));
     $('body').append(html);
   }
   );
@@ -58,22 +60,31 @@ var listView = function(id, name, type, location, img) {
     `;
 }
 
-var detailView = function (name, type, location, img) {
+var detailView = function (name, type, location, img, website, ig) {
     return `
   
-    <div class="container">
-        <img class="card-img-top rounded mx-auto d-block" style="width: 300px; height: 300px;" src="${img}" alt="Card image cap">
-        <br>      
-        <h1 class="text-center">${name}<h1>
-        <p class="text-center"> ${type} <br>${location}</p>
-        <p class="lead text-center">
+   <div class="container">
+      <div class="float-left">
+        <img class="card-img-top rounded mx-auto d-block " style="width: 300px; height: 300px;" src="${img}" alt="Card image cap">
+      </div>          
+          <div class="list">
+            <ul style="list-style: none;">
+              <li><h3>Name: ${name}</h3></li>
+              <li><h3>Type: ${type}</h3></li>
+              <li><h3>Location: ${location}</h3></li>
+              <li><h3>Website: ${website}</h3></li>
+              <li><h3>IG: ${ig}</h3></li>
+            </ul>
+            <br>
+            <br>
+          </div>   
+          <div class="float-left">
+            <a href="index.html" class="btn btn-lg btn-secondary float-left">Go Back</a>
+          </div>  
           <br>
           <br>
-              <a href="index.html" class="btn btn-lg btn-secondary float-left">Go Back</a>
-              <a href="${location}"></a>
-              <br><br>
-            </p>
-    </div>
+   </div>  
+   
     `;
 }
 
