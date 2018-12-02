@@ -36,18 +36,20 @@ var getOneRecord = function(id) {
     var name = record.fields['Name'];
     var location = record.fields ['Location'];
     var website = record.fields ['Website'];
-    var ig = record.fields ['Ig'];
+    var ig = record.fields ['Instagram'];
     var type = record.fields['Type'];
     var img = record.fields['Images'];
     var photos = record.fields['Photos'];
-    html.push(detailView(name,type,location,img,website,ig));
+    var long = record.fields['Long'];
+    var lat = record.fields['Lat'];
+    html.push(detailView(name,type,location,img,website,ig,long,lat));
     $('body').append(html);
   }
   );
 }
 
 /*the html stuff down here*/
-var listView = function(id, name, type, location, img) {
+var listView = function(id, name, type, location, img,) {
   return `
   <div class="card" style="width: 18rem; display: inline-flex;">
   <img class="card-img-top" src="${img}" alt="Card image cap">
@@ -60,30 +62,32 @@ var listView = function(id, name, type, location, img) {
     `;
 }
 
-var detailView = function (name, type, location, img, website, ig) {
+var detailView = function (name, type, location, img, website, ig, long, lat) {
     return `
-  
-   <div class="container">
-      <div class="float-left">
-        <img class="card-img-top rounded mx-auto d-block " style="width: 300px; height: 300px;" src="${img}" alt="Card image cap">
-      </div>          
-          <div class="list">
-            <ul style="list-style: none;">
-              <li><h3>Name: ${name}</h3></li>
-              <li><h3>Type: ${type}</h3></li>
-              <li><h3>Location: ${location}</h3></li>
-              <li><h3>Website: ${website}</h3></li>
-              <li><h3>IG: ${ig}</h3></li>
-            </ul>
-            <br>
-            <br>
-          </div>   
-          <div class="float-left">
-            <a href="index.html" class="btn btn-lg btn-secondary float-left">Go Back</a>
-          </div>  
-          <br>
-          <br>
-   </div>  
+<div class="container">  
+    <div class="card">
+       <div class="card-header">
+         ${name}
+       </div>
+         <div class="card-body">
+         <img class="card-img-top float-left" style="width: 300px; height: 300px;" src="${img}">
+          <ul style="list-style: none;">
+             <li><h3>Name: ${name}</h3></li>
+             <li><h3>Type: ${type}</h3></li>
+             <li><h3><img style="height: 35px; width: 35px;" src="https://img.icons8.com/metro/2x/marker.png">: ${location}</h3></li>
+             <li><h3><h3><img style="height: 35px; width: 35px;" src="https://img.icons8.com/material/2x/internet.png">: ${website ? `<a href="${website}">${website}</a>` : `Nothing yet`} </h3></li>
+             <li><h3><img style="height: 40px; width: 40px;" src="https://png.icons8.com/windows/2x/instagram-new.png">:${ig ? `<a href="${ig}">${ig}</a>` : `Nothing yet`}</h3></li>
+             <br>
+             <br>
+             <a href="https://www.google.com/maps/search/${name} ${location}">
+              ${lat && long ? `<img class="img-fluid" alt="No location yet" src="https://api.mapbox.com/v4/mapbox.streets/${long},${lat},15/600x200.jpg?access_token=pk.eyJ1IjoibHVuYXJvamEiLCJhIjoiY2o4b2x1NXlmMDN6NDMzbWtpMzExM3ppdiJ9.M8L9FACjOXRrZWrkurNjTg" />` : `No location yet`}
+             </a>
+          </ul>
+       <a href="#" class="btn btn-primary">Go Back</a>
+     </div>
+   </div>
+</div>
+
    
     `;
 }
