@@ -83,7 +83,7 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
               ${lat && long ? `<img class="img-fluid" alt="No location yet" src="https://api.mapbox.com/v4/mapbox.streets/${long},${lat},15/600x200.jpg?access_token=pk.eyJ1IjoibHVuYXJvamEiLCJhIjoiY2o4b2x1NXlmMDN6NDMzbWtpMzExM3ppdiJ9.M8L9FACjOXRrZWrkurNjTg" />` : `No location yet`}
              </a>
           </ul>
-       <a href="#" class="btn btn-primary">Go Back</a>
+       <a href="index.html" class="btn btn-primary">Go Back</a>dsds
      </div>
    </div>
 </div>
