@@ -70,7 +70,7 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
          ${name}
        </div>
          <div class="card-body">
-         <img class="card-img-top float-left" style="width: 300px; height: 300px;" src="${img}">
+         <img class="card-img-top float-left" style="width: 300px; height: 300px; padding: 10px;" src="${img}">
           <ul style="list-style: none;">
              <li><h3>Name: ${name}</h3></li>
              <li><h3>Type: ${type}</h3></li>
@@ -80,10 +80,10 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
              <br>
              <br>
              <a href="https://www.google.com/maps/search/${name} ${location}">
-              ${lat && long ? `<img class="img-fluid" alt="No location yet" src="https://api.mapbox.com/v4/mapbox.streets/${long},${lat},15/600x200.jpg?access_token=pk.eyJ1IjoibHVuYXJvamEiLCJhIjoiY2o4b2x1NXlmMDN6NDMzbWtpMzExM3ppdiJ9.M8L9FACjOXRrZWrkurNjTg" />` : `No location yet`}
+              ${lat && long ? `<img style="padding: 10px;"class="img-fluid" alt="No location yet" src="https://api.mapbox.com/v4/mapbox.streets/${long},${lat},15/600x200.jpg?access_token=pk.eyJ1IjoibHVuYXJvamEiLCJhIjoiY2o4b2x1NXlmMDN6NDMzbWtpMzExM3ppdiJ9.M8L9FACjOXRrZWrkurNjTg" />` : `No location yet`}
              </a>
           </ul>
-       <a href="index.html" class="btn btn-primary">Go Back</a>dsds
+       <a href="index.html" class="btn btn-primary">Go Back</a>
      </div>
    </div>
 </div>
