@@ -32,9 +32,9 @@ p {
     height: 250px;
 }
 
-.card {
+/*.card {
    margin: 10px;
-}
+}*/
 
 .navbar {
     background-color: lightgray;
@@ -47,3 +47,7 @@ p {
 .jumbotron-fluid ul {
     list-style: none;
 }
+
+.container-fluid a:hover {
+    background-color:  lightblue;
+} 

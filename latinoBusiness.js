@@ -93,12 +93,16 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
 }
 
 
+
+
 var id = getParameterByName('id');
 if (id) {
   getOneRecord(id);
 } else {
   getAllrecords();
 }
+
+
 
 
 
