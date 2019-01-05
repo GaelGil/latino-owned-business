@@ -50,7 +50,13 @@ body{
     width: 100px;
     float: left;
     margin: 10px;
-    background-color: lightblue;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.menu a {
+    color: white;
 }
 
 .menu a:hover {
@@ -76,6 +82,56 @@ body{
   }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + body {
+  .sticky + content {
     padding-top: 60px;
   }
+
+  #footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: gray;
+}
+
+#footer-lists {
+    padding: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.list-dif {
+    height: 100px;
+    width: 100px;
+    display: inline-flex;
+    position: relative;
+}
+
+.list-dif ul {
+    list-style: none;
+}
+
+.list-dif li {
+    color: gray;
+}
+
+#social-media {
+    height: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.in {
+    display: inline-flex;
+    
+}
+
+.in ul {
+    list-style: none;
+}
+
+.in img {
+    height: 20px;
+    width: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
