@@ -10,37 +10,68 @@
 
 
 body{
-    background: lightgrey;
-    margin: 0px;
-    
-}
-/*
-.mid {
-    margin-left: 100px;
-}
-
-.list img {
-    
-    height: 250px;
-}
-
-.navbar {
     background-color: lightgray;
-}*/
-/*
-.jumbotron {    
-    background: lightgray;
+    padding: 0px;
+    margin: 0px;
 }
 
-.jumbotron-fluid ul {
-    list-style: none;
+.navbar{
+    display: none;
 }
 
-.container-fluid a:hover {
-    background-color:  lightblue;
-} */
+#myCarousel {
+    display: none;
+}
 
 .content {
+    
+}
+
+.mid {
+    padding-left: 100px;
+}
+
+.card {
+    width: 180px;
+    height: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card img {
+    height: 150px;
+    width: relative;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        display: block;
+    }
+
+    #myCarousel {
+        display: block;
+    }
+
+    #myCarousel img {
+        width: 100%;
+    }
+
+    .mid {
+        padding-left: 120px;
+    }
+    
+    .list img {
+        max-height: 200px;
+    }
+    
+    .card {
+        width: 18rem; 
+        display: inline-flex;
+    }
+}
+/*.content {
     width: 100%;
     margin-top: 10px;
 }
@@ -79,10 +110,10 @@ body{
     position: fixed;
     top: 0;
     width: 100px;
-  }
+  }*/
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + content {
+  /*.sticky + content {
     padding-top: 60px;
   }
 
@@ -135,3 +166,4 @@ body{
     background-color: lightgray;
     border-radius: 5px;
 }
+*/

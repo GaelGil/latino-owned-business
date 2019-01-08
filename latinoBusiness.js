@@ -51,7 +51,7 @@ var getOneRecord = function(id) {
 /*the html stuff down here*/
 var listView = function(id, name, type, location, img,) {
   return `
-  <div class="card" style="width: 18rem; display: inline-flex;">
+  <div class="card">
   <img class="card-img-top" src="${img}" alt="Card image cap">
   <div class="card-body">
      <h5 class="card-title">${name}</h5>
@@ -61,6 +61,8 @@ var listView = function(id, name, type, location, img,) {
 </div>
     `;
 }
+
+/* style="width: 18rem; display: inline-flex;*/
 
 var detailView = function (name, type, location, img, website, ig, long, lat) {
     return `
