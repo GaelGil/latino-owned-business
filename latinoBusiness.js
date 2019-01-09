@@ -72,13 +72,18 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
          ${name}
        </div>
          <div class="card-body">
-         <img class="card-img-top float-left" style="width: 300px; height: 300px; padding: 10px;" src="${img}">
+         <img class="card-img-top float-left" src="${img}">
           <ul style="list-style: none;">
              <li><h3>Name: ${name}</h3></li>
+             <hr>
              <li><h3>Type: ${type}</h3></li>
-             <li><h3><img style="height: 35px; width: 35px;" src="https://img.icons8.com/metro/2x/marker.png">: ${location}</h3></li>
-             <li><h3><h3><img style="height: 35px; width: 35px;" src="https://img.icons8.com/material/2x/internet.png">: ${website ? `<a href="${website}">${website}</a>` : `Nothing yet`} </h3></li>
-             <li><h3><img style="height: 40px; width: 40px;" src="https://png.icons8.com/windows/2x/instagram-new.png">:${ig ? `<a href="${ig}">${ig}</a>` : `Nothing yet`}</h3></li>
+             <hr>
+             <li><h3><img style="height: 15px; width: 15px;" src="https://img.icons8.com/metro/2x/marker.png">: ${location}</h3></li>
+             <hr>
+             <li><h3><h3><img style="height: 15px; width: 15px;" src="https://img.icons8.com/material/2x/internet.png">: ${website ? `<a href="${website}">${website}</a>` : `Nothing yet`} </h3></li> <hr>
+             <hr
+             <li><h3><img style="height: 25px; width: 25px;" src="https://png.icons8.com/windows/2x/instagram-new.png">:${ig ? `<a href="${ig}">${ig}</a>` : `Nothing yet`}</h3></li>
+              <hr>
              <br>
              <br>
              <a href="https://www.google.com/maps/search/${name} ${location}">
