@@ -53,7 +53,7 @@ var listView = function(id, name, type, location, img,) {
   return `
   <div class="card">
     <div class="card-contents">
-      <img class="card-img-top" src="${img}" alt="Card image cap">
+     <a href="index.html?id=${id}"> <img class="card-img-top" src="${img}" alt="Card image cap"> </a>
         <div class="card-body">
           <h5 class="card-title">${name}</h5>
           <p class="card-text">${type} <br> ${location}.</p>
@@ -69,12 +69,13 @@ var listView = function(id, name, type, location, img,) {
 var detailView = function (name, type, location, img, website, ig, long, lat) {
     return `
 <div class="container">  
-    <div class="card" id="detail">
+    <div class="detail-card">
        <div class="card-header">
          ${name}
+         <hr>
        </div>
-         <div class="card-body">
-         <img class="card-img-top" src="${img}">
+         <div class="detail-body">
+         <img  src="${img}">
           <ul style="list-style: none;">
              <li><h3>Name: ${name}</h3></li>
              <hr>
@@ -89,10 +90,10 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
              <br>
              <br>
              <a href="https://www.google.com/maps/search/${name} ${location}">
-              ${lat && long ? `<img style="padding: 10px;"class="img-fluid" alt="No location yet" src="https://api.mapbox.com/v4/mapbox.streets/${long},${lat},15/600x200.jpg?access_token=pk.eyJ1IjoibHVuYXJvamEiLCJhIjoiY2o4b2x1NXlmMDN6NDMzbWtpMzExM3ppdiJ9.M8L9FACjOXRrZWrkurNjTg" />` : `No location yet`}
+              ${lat && long ? `<img id="map" style="padding: 10px;"class="img-fluid" alt="No location yet" src="https://api.mapbox.com/v4/mapbox.streets/${long},${lat},15/600x200.jpg?access_token=pk.eyJ1IjoibHVuYXJvamEiLCJhIjoiY2o4b2x1NXlmMDN6NDMzbWtpMzExM3ppdiJ9.M8L9FACjOXRrZWrkurNjTg" />` : `No location yet`}
              </a>
           </ul>
-       <a href="index.html" class="btn btn-primary">Go Back</a>
+       <a href="index.html" class="btn btn-primary"><button class="btn-detail">Go Back</button></a>
      </div>
    </div>
 </div>

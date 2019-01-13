@@ -5,3 +5,5 @@ $(window).scroll(function(){
         $('.nav-bar').removeClass("sticky"); //when not scrolling "sticky" isnt being use
     }
 })
+
+// for the nav bar to follow when u scroll
