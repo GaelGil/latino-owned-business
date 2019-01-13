@@ -90,17 +90,17 @@
       <div class="slideshow-container">
 
           <div class="mySlides fade">
-            <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg" style="width:100%">
+            <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg">
             <div class="caption" id="home">Home</div>
           </div>
           
           <div class="mySlides fade">
-            <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg" style="width:100%">
+            <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg">
             <div class="caption" id="about">About</div>
           </div>
           
           <div class="mySlides fade">
-            <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg" style="width:100%">
+            <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg">
             <div class="caption" id="other">Other</div>
           </div>
           
@@ -112,6 +112,7 @@
             <span class="dot"></span> 
             <span class="dot"></span> 
           </div>
+
       <div class="nav-bar" id="nav">
         <div class="nav-list">
           <ul>
@@ -245,6 +246,28 @@
         </div>
       </div>
     </div>-->
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

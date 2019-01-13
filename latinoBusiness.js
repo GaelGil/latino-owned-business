@@ -52,12 +52,14 @@ var getOneRecord = function(id) {
 var listView = function(id, name, type, location, img,) {
   return `
   <div class="card">
-  <img class="card-img-top" src="${img}" alt="Card image cap">
-  <div class="card-body">
-     <h5 class="card-title">${name}</h5>
-      <p class="card-text">${type} <br> ${location}.</p>
-      <a href="index.html?id=${id}" class="btn btn-primary">Explore</a>
-  </div>
+    <div class="card-contents">
+      <img class="card-img-top" src="${img}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">${name}</h5>
+          <p class="card-text">${type} <br> ${location}.</p>
+          <a href="index.html?id=${id}"><button class="btn">Explore</button></a>
+      </div>
+  </div  
 </div>
     `;
 }
@@ -67,12 +69,12 @@ var listView = function(id, name, type, location, img,) {
 var detailView = function (name, type, location, img, website, ig, long, lat) {
     return `
 <div class="container">  
-    <div class="card">
+    <div class="card" id="detail">
        <div class="card-header">
          ${name}
        </div>
          <div class="card-body">
-         <img class="card-img-top float-left" src="${img}">
+         <img class="card-img-top" src="${img}">
           <ul style="list-style: none;">
              <li><h3>Name: ${name}</h3></li>
              <hr>
@@ -80,7 +82,7 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
              <hr>
              <li><h3><img style="height: 15px; width: 15px;" src="https://img.icons8.com/metro/2x/marker.png">: ${location}</h3></li>
              <hr>
-             <li><h3><h3><img style="height: 15px; width: 15px;" src="https://img.icons8.com/material/2x/internet.png">: ${website ? `<a href="${website}">${website}</a>` : `Nothing yet`} </h3></li> <hr>
+             <li><h3><h3><img style="height: 15px; width: 15px;" src="https://img.icons8.com/material/2x/internet.png">: ${website ? `<a href="${website}">${website}</a>` : `Nothing yet`} </h3></li> 
              <hr
              <li><h3><img style="height: 25px; width: 25px;" src="https://png.icons8.com/windows/2x/instagram-new.png">:${ig ? `<a href="${ig}">${ig}</a>` : `Nothing yet`}</h3></li>
               <hr>
