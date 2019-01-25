@@ -55,12 +55,17 @@ var listView = function(id, name, type, location, img,) {
     <div class="card-contents">
      <a href="index.html?id=${id}"> <img class="card-img-top" src="${img}" alt="Card image cap"> </a>
         <div class="card-body">
-          <h5 class="card-title">${name}</h5>
-          <p class="card-text">${type} <br> ${location}.</p>
+          <ul class="card-text">
+            <li id="name"><strong>${name}</strong></li>
+            <li id="type">${type}</li>
+            <li id="location">${location}</li>
+          </ul>
           <a href="index.html?id=${id}"><button class="btn">Explore</button></a>
       </div>
   </div  
 </div>
+<div class="border">
+  </div>
     `;
 }
 
@@ -71,29 +76,22 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
 <div class="container">  
     <div class="detail-card">
        <div class="card-header">
-         ${name}
-         <hr>
+         <strong>${name}</strong>
        </div>
          <div class="detail-body">
-         <img  src="${img}">
+         <img id="main-img" src="${img}">
           <ul style="list-style: none;">
              <li><h3>Name: ${name}</h3></li>
-             <hr>
              <li><h3>Type: ${type}</h3></li>
-             <hr>
              <li><h3><img style="height: 15px; width: 15px;" src="https://img.icons8.com/metro/2x/marker.png">: ${location}</h3></li>
-             <hr>
-             <li><h3><h3><img style="height: 15px; width: 15px;" src="https://img.icons8.com/material/2x/internet.png">: ${website ? `<a href="${website}">${website}</a>` : `Nothing yet`} </h3></li> 
-             <hr
+             <li><h3><h3><img style="height: 15px; width: 15px;" src="https://img.icons8.com/material/2x/internet.png">: ${website ? `<a href="${website}">${website}</a>` : `Nothing yet`} </h3></li>
              <li><h3><img style="height: 25px; width: 25px;" src="https://png.icons8.com/windows/2x/instagram-new.png">:${ig ? `<a href="${ig}">${ig}</a>` : `Nothing yet`}</h3></li>
-              <hr>
-             <br>
-             <br>
+             <li>
              <a href="https://www.google.com/maps/search/${name} ${location}">
               ${lat && long ? `<img id="map" style="padding: 10px;"class="img-fluid" alt="No location yet" src="https://api.mapbox.com/v4/mapbox.streets/${long},${lat},15/600x200.jpg?access_token=pk.eyJ1IjoibHVuYXJvamEiLCJhIjoiY2o4b2x1NXlmMDN6NDMzbWtpMzExM3ppdiJ9.M8L9FACjOXRrZWrkurNjTg" />` : `No location yet`}
-             </a>
+             </a></li>
           </ul>
-       <a href="index.html" class="btn btn-primary"><button class="btn-detail">Go Back</button></a>
+       <a href="index.html"><button id="detail-btn" class="btn">Go Back</button></a>
      </div>
    </div>
 </div>
