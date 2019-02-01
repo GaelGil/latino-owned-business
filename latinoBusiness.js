@@ -56,11 +56,13 @@ var listView = function(id, name, type, location, img,) {
      <a href="index.html?id=${id}"> <img class="card-img-top" src="${img}" alt="Card image cap"> </a>
         <div class="card-body">
           <ul class="card-text">
-            <li id="name"><strong>${name}</strong></li>
-            <li id="type">${type}</li>
+            <li id="name"><strong>${name}</strong></li> <br>
+            <li id="type">${type}</li><br>
             <li id="location">${location}</li>
           </ul>
+          <div class="btn-con">
           <a href="index.html?id=${id}"><button class="btn">Explore</button></a>
+          </div>
       </div>
   </div  
 </div>
