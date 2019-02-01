@@ -16,7 +16,7 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
     var html = [];
     $.each(data.records, function(index, record) {
       var id = record.id;
-      console.log(id);
+      /*console.log(id);*/
       var name = record.fields['Name'];
       var location = record.fields['Location'];
       var type = record.fields['Type'];

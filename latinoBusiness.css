@@ -13,7 +13,7 @@ body{
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    background: lightgrey;
+    background: white;
 }
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -73,6 +73,7 @@ img:hover {
 
 .btn {
     text-decoration: none;
+    color: white;
     background-color:  #0074e4;
     border: 1px solid #0074e4;
     border-radius: 5px;
@@ -88,15 +89,8 @@ img:hover {
 
 .btn:hover {
     background-color: white;
+    color: #0074e4;
 }
-
-/*.border {
-    height: 10px;
-    width: inherit;
-    background-color: aqua;
-    border: 1px solid aqua;
-    border-radius: 5px;
-}/*
 
 /* 
 for the 
@@ -114,6 +108,10 @@ detailed view
 
 #detail-btn {
     margin: 30px;
+}
+
+#detail-btn:hover {
+    color: #0074e4;
 }
 
 .detail-body ul {
@@ -135,8 +133,7 @@ detailed view
 
 
 
-/*for the bigger screens*/
-
+/*for the big screens*/
 @media only screen and (min-width: 768px) {
     .nav-bar {
         display: block;
@@ -191,12 +188,18 @@ detailed view
     
     .list img {
         max-height: 200px;
+        border-radius: 5px;
     }
 
     .card {
-        width: 230px;
+        width: 200px;
         height: inherit;
         display: inline-flex;
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        margin: 10px;
+        padding: 10px;
     }
 
     
