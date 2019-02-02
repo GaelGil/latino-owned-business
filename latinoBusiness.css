@@ -133,6 +133,41 @@ detailed view
 
 
 
+/*for sideways phones*/
+@media only screen and (min-width: 460px){
+    .mid {
+        width: 100%;
+        text-align: center;
+    }
+    .card {
+        width: 45%;
+        display: inline-flex;
+        margin: 5px;
+    }
+    .card-body {
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .mid {
+        width: 100%;
+        text-align: center;
+    }
+    .card {
+        width: 40%;
+        display: inline-flex;
+        margin: 30px;
+    }
+    .card-body {
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+    }
+}
+
 /*for the big screens*/
 @media only screen and (min-width: 768px) {
     .nav-bar {
@@ -176,7 +211,7 @@ detailed view
         position: fixed;
         top: 0;
         width: 100%;
-      }*/
+      }
       
       .sticky + body {
         padding-top: 60px;
@@ -294,4 +329,11 @@ detailed view
 /*even bigger screens*/
 @media only screen and (min-width: 1000px){
 
+}
+
+
+/*temporary*/
+
+.search {
+    display: inline-flex;
 }

@@ -53,7 +53,7 @@ var listView = function(id, name, type, location, img,) {
   return `
   <div class="card">
     <div class="card-contents">
-     <a href="index.html?id=${id}"> <img class="card-img-top" src="${img}" alt="Card image cap"> </a>
+     <a href="index.html?id=${id}"> <img class="card-img-top" src="${img}" alt="Image of Business"> </a>
         <div class="card-body">
           <ul class="card-text">
             <li id="name"><strong>${name}</strong></li> <br>

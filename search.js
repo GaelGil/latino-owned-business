@@ -2,24 +2,28 @@
 //on the type
 function filter () {
 
-    var value,type, card, i;
+    var value,type, card, fullCard, i; //variables used 
     value = document.getElementById("value").value.toUpperCase();
-    card = document.getElementsByClassName("card");
+    card = document.getElementsByClassName("card-text");
+    fullCard = document.getElementsByClassName("card");
+
 
     for(i=0; i <card.length; i++){
         type = card[i].getElementsByClassName("type");
-        if  (type[0].innerHTML.toUpperCase().indexOf(value)){
-            card[i].style.display = "grid"; //originaly flex 
+        if  (type[0].innerHTML.toUpperCase().indexOf(value)){ 
+             fullCard[i].style.display = "none"; //originaly flex 
         } else {
-            card[i].style.display = "none";
+            $('.card').addClass(".search")
+            //fullCard[i].style.display = "grid";
         }
     }
 }
 
-//not actually sorting 
-// on type
+//works for now but 
+//when i type in 
+//a value it 
+//and type new one
+//it doesnt work
 //
-//when function runs
-//it displays weirdly 
-//not reading the right
-//thing maybe
+//might have to do with 
+//line 16
