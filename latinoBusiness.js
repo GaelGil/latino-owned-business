@@ -57,7 +57,7 @@ var listView = function(id, name, type, location, img,) {
         <div class="card-body">
           <ul class="card-text">
             <li id="name"><strong>${name}</strong></li> <br>
-            <li id="type">${type}</li><br>
+            <li class="type" id="type">${type}</li><br>
             <li id="location">${location}</li>
           </ul>
           <div class="btn-con">
@@ -71,7 +71,6 @@ var listView = function(id, name, type, location, img,) {
     `;
 }
 
-/* style="width: 18rem; display: inline-flex;*/
 
 var detailView = function (name, type, location, img, website, ig, long, lat) {
     return `
@@ -111,15 +110,3 @@ if (id) {
 } else {
   getAllrecords();
 }
-
-
-
-
-
-
-      /*in case all fails use this */
-      /*html.push(`<ul><li><div class="businesses"><h2><div class="img"><img style="width: 300px; height: 150px;"src="${img}" alt="photo">
-      </div><div class="name">${name}</div> <div class="type">${type}</div> 
-      <div class="location">${location}</div></h2></div></li></ul>`);*/
-      /*in case all fails pt 2
-      html.push(`<div class="container"><img style="width: 300px; height: 150px;"src="${img}" alt="photo">, ${name}, ${type}, ${location}</div>`);*/
