@@ -20,7 +20,7 @@ body{
 
 }
 
-.slideshow-container {
+.banner {
     display: none;
 }
 
@@ -170,6 +170,24 @@ detailed view
 
 /*for the big screens*/
 @media only screen and (min-width: 768px) {
+    .banner {
+        display: block;
+        width: 100%;
+        height: 350px;
+    }
+    .banner img {
+        width: 100%;
+        height: 350px;
+    }
+    .banner-text {
+            color: #0074e4;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          
+    }
+    
     .nav-bar {
         display: block;
         width: 100%;
@@ -275,53 +293,7 @@ detailed view
         margin: 50px;
     }
  
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-      display: block;
-      background-color: lightblue;
-    }
 
-    /* Caption text */
-    .caption {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-    display: none;
-    }
-
-    .active {
-    background-color: #717171;
-    }
-
-    /* Fading animation */
-    .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-    }
-
-    @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-    }
 
         
     }

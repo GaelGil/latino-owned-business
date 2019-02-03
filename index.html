@@ -14,32 +14,15 @@
         <script src="sticky.js"></script>
     </head>
     <body>
-     
-      <div class="slideshow-container">
 
-          <div class="mySlides fade">
-            <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg">
-            <div class="caption" id="home">Home</div>
+      <section>
+          <div class="banner">
+            <div class="banner-img">
+              <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg">
+            </div>
+              <div class="banner-text"><h1 id="img-text">Welcome</h1></div>
           </div>
-          
-          <div class="mySlides fade">
-            <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg">
-            <div class="caption" id="about">About</div>
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="https://i.pinimg.com/originals/4d/43/0d/4d430d47b3a7b20d57f17257193d8f78.jpg">
-            <div class="caption" id="other">Other</div>
-          </div>
-          
-          </div>
-          <br>
-      
-          <div style="text-align:center">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-          </div>
+      </section>
 
 <!--          <div class="sort-btn">
             <button style="width: inherit; height: inherit;" onclick="filter()" id="value" >clothes</button>       
@@ -51,7 +34,7 @@
             </div>
           </div>-->
 
-
+<!--nab bar-->
       <div class="nav-bar" id="nav">
         <div class="nav-list">
           <ul>
@@ -72,6 +55,8 @@
            </ul>
         </div>
       </div>
+
+<!--data from airtable-->      
       <div class="content">
       
         <div class="mid">
@@ -183,28 +168,7 @@
       </div>
     </div>-->
 
-    <script>
-      var slideIndex = 0;
-      showSlides();
-      
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 5000); // Change image every 2 seconds
-      }
-      </script>
-
+   
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

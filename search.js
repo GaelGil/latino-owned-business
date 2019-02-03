@@ -13,8 +13,8 @@ function filter () {
         if  (type[0].innerHTML.toUpperCase().indexOf(value)){ 
              fullCard[i].style.display = "none"; //originaly flex 
         } else {
-            $('.card').addClass(".search")
-            //fullCard[i].style.display = "grid";
+            //$('.card').addClass(".search")
+            fullCard[i].style.display = "grid";
         } 
     }
 }
@@ -24,7 +24,7 @@ function filter () {
 
 //works for now but 
 //when i type in 
-//a value it 
+//a value in it 
 //and type new one
 //it doesnt work
 //
