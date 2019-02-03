@@ -6,4 +6,5 @@ $(window).scroll(function(){
     }
 })
 
+
 // for the nav bar to follow when u scroll

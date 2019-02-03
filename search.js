@@ -15,9 +15,12 @@ function filter () {
         } else {
             $('.card').addClass(".search")
             //fullCard[i].style.display = "grid";
-        }
+        } 
     }
 }
+
+
+
 
 //works for now but 
 //when i type in 
