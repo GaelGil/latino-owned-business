@@ -210,6 +210,7 @@ detailed view
 
     .nav-bar li {
         padding: 0px 10px 0px 10px;
+        color: white;
     }
 
     .nav-bar a {
@@ -237,10 +238,12 @@ detailed view
 
     .mid {
         text-align: center;
+        
     }
     
     .list img {
         max-height: 200px;
+        width: inherit;
         border-radius: 5px;
     }
 
@@ -251,13 +254,14 @@ detailed view
         background-color: lightgray;
         border: 1px solid lightgray;
         border-radius: 3px;
-        margin: 10px;
-        padding: 10px;
+        margin: 15px;
+        
     }
 
     
     .card-contentns {
         display: grid;
+        
     }
 
     .card img {
@@ -269,28 +273,34 @@ detailed view
     for the 
     detailed view
     */
-    
+    .container {
+        width: 40%;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
 
     .detail-card {
-        width: 500px;
+        
     }
 
     .card-header {
-        text-align: center;
+        background-color: #0074e4;
+        color: white;
+        border: 1px solid #0074e4;
+        border-radius: 3px;
         font-size: 20px;
     }
 
     .detail-card img {
-        width: 300px;
+        width: 60%;
+
     }
 
     .detail ul {
-        float: right;
+        
     }
     #map {
-        width: 500px;
-        height: 250px;
-        margin: 50px;
+       width: 100%;
     }
  
 

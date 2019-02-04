@@ -8,13 +8,13 @@ function filter () {
     fullCard = document.getElementsByClassName("card");
 
 
-    for(i=0; i <card.length; i++){
-        type = card[i].getElementsByClassName("type");
+    for(i=0; i <fullCard.length; i++){
+        type = fullCard[i].getElementsByClassName("type");
         if  (type[0].innerHTML.toUpperCase().indexOf(value)){ 
              fullCard[i].style.display = "none"; //originaly flex 
         } else {
-            //$('.card').addClass(".search")
-            fullCard[i].style.display = "grid";
+            $('.card').addClass(".search")
+            //fullCard[i].style.display = "grid";
         } 
     }
 }

@@ -89,7 +89,7 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
              <li><h3><img style="height: 25px; width: 25px;" src="https://png.icons8.com/windows/2x/instagram-new.png">:${ig ? `<a href="${ig}">${ig}</a>` : `Nothing yet`}</h3></li>
              <li>
              <a href="https://www.google.com/maps/search/${name} ${location}">
-              ${lat && long ? `<img id="map" style="padding: 10px;"class="img-fluid" alt="No location yet" src="https://api.mapbox.com/v4/mapbox.streets/${long},${lat},15/600x200.jpg?access_token=pk.eyJ1IjoibHVuYXJvamEiLCJhIjoiY2o4b2x1NXlmMDN6NDMzbWtpMzExM3ppdiJ9.M8L9FACjOXRrZWrkurNjTg" />` : `No location yet`}
+              ${lat && long ? `<img id="map" alt="No location yet" src="https://api.mapbox.com/v4/mapbox.streets/${long},${lat},15/600x200.jpg?access_token=pk.eyJ1IjoibHVuYXJvamEiLCJhIjoiY2o4b2x1NXlmMDN6NDMzbWtpMzExM3ppdiJ9.M8L9FACjOXRrZWrkurNjTg" />` : `No location yet`}
              </a></li>
           </ul>
        <a href="index.html"><button id="detail-btn" class="btn">Go Back</button></a>
