@@ -62,9 +62,14 @@ img:hover {
     
     }
 
+.card-text {
+    font-size: 15px;
+}
+
 .card-text li {
     list-style: none;
     float: left;
+
  }
 
 .card-body a{
@@ -297,6 +302,9 @@ detailed view
         
     }
 
+    .card-text {
+        font-size: 13px;
+    }
     
     .card-contentns {
         display: grid;
