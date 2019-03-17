@@ -16,7 +16,6 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
     var html = [];
     $.each(data.records, function(index, record) {
       var id = record.id;
-      /*console.log(id);*/
       var name = record.fields['Name'];
       var location = record.fields['Location'];
       var type = record.fields['Type'];
@@ -30,7 +29,7 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
 }
 
 var getOneRecord = function(id) {
-  $.getJSON(`https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201/${id}?api_key=keyjQ3080rrDaCwO6`, 
+  $.getJSON(`https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201/${id}?api_key=keyjQ3080rrDaCwO6`,
   function(record) {
     var html = [];
     var name = record.fields['Name'];
@@ -64,7 +63,7 @@ var listView = function(id, name, type, location, img,) {
           <a href="index.html?id=${id}"><button class="btn">Explore</button></a>
           </div>
       </div>
-  </div  
+  </div
 </div>
 <div class="border">
   </div>
@@ -74,7 +73,7 @@ var listView = function(id, name, type, location, img,) {
 
 var detailView = function (name, type, location, img, website, ig, long, lat) {
     return `
-<div class="container">  
+<div class="container">
     <div class="detail-card">
        <div class="card-header">
          <strong>${name}</strong>
@@ -97,7 +96,7 @@ var detailView = function (name, type, location, img, website, ig, long, lat) {
    </div>
 </div>
 
-   
+
     `;
 }
 
