@@ -1,9 +1,10 @@
 //for sorting depending
 //on the type
-function filter () {
+function filter(type) {
 
     var value,type, card, fullCard, i; //variables used
-    value = document.getElementById("value").value.toUpperCase();
+    //value = document.getElementById("value").value.toUpperCase();
+    value = type;
     card = document.getElementsByClassName("card-text");
     fullCard = document.getElementsByClassName("card");
 
