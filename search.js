@@ -21,6 +21,27 @@ function filter(type) {
 }
 
 
+//copy of function above to mess around with
+/*
+function ot() {
+
+    var value,type, card, fullCard, i; //variables used
+    //value = document.getElementById("value").value.toUpperCase();
+    value = type;
+    card = document.getElementsByClassName("card-text");
+    fullCard = document.getElementsByClassName("card");
+
+
+    for(i=0; i <fullCard.length; i++){
+        type = fullCard[i].getElementsByClassName("type");
+        if  (type[0].innerHTML.toUpperCase().indexOf(value)){
+             fullCard[i].style.display = "none"; //originaly flex
+        } else {
+            $('.card').addClass(".search")
+            //fullCard[i].style.display = "grid";
+        }
+    }
+}*/
 
 
 //works for now but
