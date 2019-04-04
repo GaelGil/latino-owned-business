@@ -21,12 +21,14 @@ $.getJSON('https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201?api_key=keyjQ
       var type = record.fields['Type'];
       var img = record.fields['Images'];
       var photos = record.fields['Photos'];
-      html.push(listView(id,name, type, location, img));
+     html.push(listView(id,name, type, location, img));
     });
     $('.list').append(html);
   }
 );
 }
+
+
 
 var getOneRecord = function(id) {
   $.getJSON(`https://api.airtable.com/v0/app7wsmtFYHxb5dNF/Table%201/${id}?api_key=keyjQ3080rrDaCwO6`,
