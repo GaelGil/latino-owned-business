@@ -1,3 +1,127 @@
 <%- contentFor('title') %>Home
 <%- contentFor('body') %>
-<h1>Hello Dynamic World!</h1>
+<!-- <h1>Hello Dynamic World!</h1> -->
+
+
+<header class="masthead text-white text-center" style="background-color: #666;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">Welcome!</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form method="GET" action="/restaurants">
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <!-- <input type="text" class="form-control form-control-lg" name="search" placeholder="Enter a restautant..."> -->
+              </div>
+              <div class="col-12 col-md-3">
+                <!-- <button type="submit" class="btn btn-block btn-lg btn-primary">Search Restaurant</button> -->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div> -->
+
+<!-- 
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <h3>Featured</h3>
+      <div class="row">
+        <div class="card" style="width: 18rem;">
+          <img src="images/GGB.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/GGB.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/GGB.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+ <!-- Image Showcases -->
+ <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/header.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>San Francisco</h2>
+          <p class="lead mb-0">View local poc owened business in San Francisco</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('images/BB.jpg');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>Oakland</h2>
+          <p class="lead mb-0">View local poc owened business in Oakland</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/mountain_water.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>San Jose</h2>
+          <p class="lead mb-0">View local poc owened business in San Jose</p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr>
+    <h2>Trending Right Now</h2>
+    <hr>
+    <div class="card-group">
+      <div class="card">
+          <img src="images/GGB.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+          </div>
+          <div class="card-footer">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+          </div>
+      </div>
+      <div class="card">
+          <img src="images/GGB.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Vestibulum id metus ac nisl bibendum nibh scelerisque non purus in suspendisse.</p>
+          </div>
+          <div class="card-footer">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+          </div>
+      </div>
+      <div class="card">
+          <img src="images/GGB.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Pulvinar leo id risus enim. Bibendum varius tincidunt pellentesque malesuada in.</p>
+          </div>
+          <div class="card-footer">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+          </div>
+      </div>
+  </div>
