@@ -18,12 +18,19 @@ router.get('/', function(req, res, next) {
   
 
   router.get('/:id/', function(req, res, next) {
-    models.Business.findByPk(req.params.id).then(function(record) {
-      res.render('business/detail', {
-        record: record
+    models.Socialmedia.findAll().then(function(socialMedias){
+      models.Business.findByPk(req.params.id).then(function(business) {
+        res.render('business/detail', {
+          socialMedias: socialMedias,
+          business: business
         });
       });
+    });
   });
+
+  // TODO: Add search funtionality
+  // TODO: Add Tags Model 
+  // TODO: Display Social Media for each businesses
 
 
   

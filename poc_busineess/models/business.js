@@ -20,7 +20,9 @@ module.exports = (sequelize, DataTypes) => {
     adresss: DataTypes.STRING,
     website: DataTypes.STRING,
     shortDescription: DataTypes.TEXT,
-    longdescrption: DataTypes.TEXT
+    longdescrption: DataTypes.TEXT,
+    neighborhood: DataTypes.TEXT,
+    city: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'Business',

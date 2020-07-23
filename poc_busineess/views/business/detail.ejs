@@ -70,18 +70,22 @@
 </div>
 
 <div class="container">
-    <h1><%= record.businessName %></h1>
+    <h1><%= business.businessName %></h1>
     <span class="fa fa-star checked"></span>
     <span class="fa fa-star checked"></span>
     <span class="fa fa-star checked"></span>
     <span class="fa fa-star"></span>
     <span class="fa fa-star"></span>
-    <p><%= record.shortDescription %></p>
+    <p><%= business.shortDescription %></p>     
+
+
 
 
     <!-- about the business -->
     <h3>About Business</h3>
-    <p><%= record.longdescrption %></p>
+    <p><%= business.neighborhood %></p>
+    <p><%= business.city %></p>
+
     <br>
     <br>
     <br>
@@ -147,5 +151,8 @@
           </div>
       </div>
 
+      <% for (let socialMedia of socialMedias) { %>
+            <h1 class="display-4"><%= socialMedia.name %></h1>
+      <% } %>
 
 </div>  

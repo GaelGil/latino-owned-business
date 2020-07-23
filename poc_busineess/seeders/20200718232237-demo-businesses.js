@@ -19,9 +19,10 @@ module.exports = {
         website: "some webiste",
         shortDescription: "this is short description",
         longdescrption: "this is a longe description",
-        neighborhood: "this neighborhood",
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        neighborhood: "this neighborhood",
+        city: "this City",
       },
       {
         businessName: "name",
@@ -29,9 +30,10 @@ module.exports = {
         website: "some webiste",
         shortDescription: "this is short description",
         longdescrption: "this is a longe description",
-        neighborhood: "this neighborhood",
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        neighborhood: "this neighborhood",
+        city: "this City",
       },
       {
         businessName: "name",
@@ -39,9 +41,10 @@ module.exports = {
         website: "some webiste",
         shortDescription: "this is short description",
         longdescrption: "this is a longe description",
-        neighborhood: "this neighborhood",
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        neighborhood: "this neighborhood",
+        city: "this City",
       },
       {
         businessName: "name",
@@ -49,9 +52,32 @@ module.exports = {
         website: "some webiste",
         shortDescription: "this is short description",
         longdescrption: "this is a longe description",
-        neighborhood: "this neighborhood",
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        neighborhood: "this neighborhood",
+        city: "this City",
+      },
+      {
+        businessName: "name",
+        adresss: "some adress",
+        website: "some webiste",
+        shortDescription: "this is short description",
+        longdescrption: "this is a longe description",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        neighborhood: "this neighborhood",
+        city: "this City",
+      },
+      {
+        businessName: "name",
+        adresss: "some adress",
+        website: "some webiste",
+        shortDescription: "this is short description",
+        longdescrption: "this is a longe description",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        neighborhood: "this neighborhood",
+        city: "this City",
       },
     ], {});
   },
